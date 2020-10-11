@@ -25,7 +25,7 @@ if(isset($_SESSION['username'])) {
 </membername>!
 
 <br />
-Welcome on our very secure, much safe, so fancy messaging system.<br /><br />
+welcome to our Website <br /><br />
 <?php
 //If the user is logged in, we display links to see the list of users, his/her pms and a link to log out
 if (isset($_SESSION['username'])) {
