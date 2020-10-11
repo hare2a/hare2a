@@ -16,22 +16,22 @@ body
 
 /* unvisited link */
 a:link {
-  color: yellow;
+  color: red;
 }
 
 /* visited link */
 a:visited {
-  color: yellow;
+  color: green;
 }
 
 /* mouse over link */
 a:hover {
-  color: yellow;
+  color: hotpink;
 }
 
 /* selected link */
 a:active {
-  color: yellow;
+  color: blue;
 }
 
 img, table, tr, td
@@ -59,7 +59,7 @@ membername
 }
 .center
 {
-	text-align:left;
+	text-align:center;
 }
 input
 {
@@ -105,7 +105,7 @@ td, th
 	margin:auto;
 	margin-top:10px;
 	padding:15px;
-	background:url('images/background');
+	background:url('images/bluec_30p.png');
 	width:70%;
 	-moz-border-radius:20px;
 	-webkit-border-radius:20px;
@@ -126,7 +126,7 @@ td, th
 }
 .content
 {
-	background:url('images/background');
+	background:url('images/bluec_30p.png');
 	width:65%;
 	-moz-border-radius:20px;
 	-webkit-border-radius:20px;
@@ -154,7 +154,7 @@ td, th
 	padding:20px;
 	margin:auto;
 	width:500px;
-	background:url('images/bluec_30p');
+	background:url('images/black_40p.png');
 	color:#ffffff;
 	font-weight:bold;
 	margin-top:20px;
