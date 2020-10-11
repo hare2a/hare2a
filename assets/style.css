@@ -21,12 +21,12 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: white;
+  color: green;
 }
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: yellow;
 }
 
 /* selected link */
