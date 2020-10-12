@@ -9,10 +9,11 @@ body
 {
 	background:darkblue;
 	margin:0px;
-	padding-left:10%;
-	padding-right:90%;
+	
+	padding:25%;
 	font-family:Arial, Geneva, sans-serif;
-    color:#FFFFFF;
+    color:#FFFFFF;3
+	margin:10px;
 }
 
 /* unvisited link */
@@ -37,7 +38,7 @@ a:active {
 
 img, table, tr, td
 {
-	border:10px;
+	border:0px;
 }
 h1
 {
@@ -65,6 +66,7 @@ membername
 input
 {
 	width:150px;
+	margin:10px;
 }
 label
 {
@@ -81,20 +83,20 @@ table
 	-webkit-border-radius:10px;
 	border-radius:10px;
 	padding:0px;
-	width:95%;
+	width:100%;
 	margin:5px auto 5px auto;
 }
 tr
 {
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	border-radius:5px;
-	margin:0px;
+	border-radius:10px;
+	margin:10px;
 	text-align:left;
 }
 td, th
 {
-	margin:0px;
+	margin:10px;
 	border:0px;
 	padding:3px;
 	text-align:left;
@@ -107,7 +109,7 @@ td, th
 	margin-top:10px;
 	padding:15px;
 	background:url('images/bluec_30p.png');
-	width:70%;
+	width:100%;
 	-moz-border-radius:20px;
 	-webkit-border-radius:20px;
 	border-radius:20px;
@@ -117,7 +119,7 @@ td, th
 {
 	text-align:center;
 	background:url('images/bluec_30p.png');
-	width:60%;
+	width:100%;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
 	border-radius:15px;
@@ -128,7 +130,7 @@ td, th
 .content
 {
 	background:url('images/bluec_30p.png');
-	width:65%;
+	width:100%;
 	-moz-border-radius:20px;
 	-webkit-border-radius:20px;
 	border-radius:20px;
@@ -150,8 +152,8 @@ td, th
 .message
 {
 	-moz-border-radius:20px;
-	-webkit-border-radius:20px;
-	border-radius:20px;
+	-webkit-border-radius:30px;
+	border-radius:30px;
 	padding:20px;
 	margin:auto;
 	width:500px;
@@ -174,7 +176,7 @@ td, th
 }
 .title_cell
 {
-	width:20%;
+	width:300%;
 }
 .date
 {
