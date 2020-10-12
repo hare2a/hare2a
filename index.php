@@ -16,7 +16,7 @@ include('config.php');
 //We display a welcome message and, if the user is logged in, we display the username
 ?>
 
-Hello
+Hi
 <membername>
 <?php
 if(isset($_SESSION['username'])) {
@@ -42,8 +42,8 @@ if (isset($_SESSION['username'])) {
 else {
 //Otherwise, we display a link to sign up / log in
 ?>
-<a href="login.php">Log in</a><br />
-<a href="sign_up.php">Sign up</a>
+<a href="login.php">Login</a><br />
+<a href="sign_up.php">Signup</a>
 <?php
 }
 ?>
