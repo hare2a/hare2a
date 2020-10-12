@@ -7,7 +7,7 @@
 }
 body
 {
-	background:#000000;
+	background:#999999;
 	padding-left:10%;
 	padding-right:10%;
 	font-family:Arial, Geneva, sans-serif;
@@ -26,17 +26,17 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: brown;
 }
 
 /* selected link */
 a:active {
-  color: blue;
+  color: yellow;
 }
 
 img, table, tr, td
 {
-	border:0px;
+	border:100px;
 }
 h1
 {
@@ -75,7 +75,7 @@ label
 table
 {
 	border-spacing:0px;
-	background:#444444;
+	background:#999999;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
@@ -105,7 +105,7 @@ td, th
 	margin:auto;
 	margin-top:10px;
 	padding:15px;
-	background:url('images/bluec_30p.png');
+	
 	width:70%;
 	-moz-border-radius:20px;
 	-webkit-border-radius:20px;
@@ -115,7 +115,7 @@ td, th
 .foot
 {
 	text-align:center;
-	background:url('images/bluec_30p.png');
+	
 	width:60%;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
@@ -126,7 +126,7 @@ td, th
 }
 .content
 {
-	background:url('images/bluec_30p.png');
+	
 	width:65%;
 	-moz-border-radius:20px;
 	-webkit-border-radius:20px;
@@ -154,7 +154,7 @@ td, th
 	padding:20px;
 	margin:auto;
 	width:500px;
-	background:url('images/black_40p.png');
+	
 	color:#ffffff;
 	font-weight:bold;
 	margin-top:20px;
@@ -188,6 +188,6 @@ td, th
 	font-weight:bold;
 	margin:5px 0px 5px 0px;
 	display:inline-block;
-	background:#444444;
+	background:#777777;
 	padding:5px;
 }
