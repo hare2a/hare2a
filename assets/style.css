@@ -7,7 +7,7 @@
 }
 body
 {
-	background:#000000;
+	background:blue;
 	padding-left:10%;
 	padding-right:10%;
 	font-family:Arial, Geneva, sans-serif;
@@ -16,12 +16,12 @@ body
 
 /* unvisited link */
 a:link {
-  color: red;
+  color: white;
 }
 
 /* visited link */
 a:visited {
-  color: green;
+  color: yellow;
 }
 
 /* mouse over link */
