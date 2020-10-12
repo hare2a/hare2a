@@ -8,8 +8,9 @@
 body
 {
 	background:darkblue;
+	margin:0px;
 	padding-left:10%;
-	padding-right:100%;
+	padding-right:90%;
 	font-family:Arial, Geneva, sans-serif;
     color:#FFFFFF;
 }
