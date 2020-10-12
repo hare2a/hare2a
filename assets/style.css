@@ -7,7 +7,7 @@
 }
 body
 {
-	background:blue;
+	background:dark blue;
 	padding-left:10%;
 	padding-right:10%;
 	font-family:Arial, Geneva, sans-serif;
@@ -16,7 +16,7 @@ body
 
 /* unvisited link */
 a:link {
-  color: white;
+  color: green;
 }
 
 /* visited link */
@@ -26,7 +26,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: white;
 }
 
 /* selected link */
