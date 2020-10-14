@@ -53,7 +53,7 @@ function getKey($user1, $user2) {
 
 		$req = mysqli_query($link, 'select * from messagekeys where user1="'.$user1.'" and user2="'.$user2.'"');
 		$dn  = mysqli_num_rows($req);
-		$dat =$req;
+		
 
 		// check if it is the first message between the two users
 		if ($dn == 0) mysqli_query($link, 'insert into messagekeys(user1, user2, mskey) values ('.$user1.', "'.$user2.'", "'.$encrypted_key.'")');
