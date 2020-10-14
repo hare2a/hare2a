@@ -23,7 +23,7 @@ include('config.php');
 				<?php
 				// fetch the IDs, usernames and emails of users
 				$req = mysqli_query($link, 'select id, username, email from users');
-				while ($dnn = mysqli_fetch_array($req)) {
+				while ($dnn = mysqli_fetch_array) {
 				?>
 
 				<tr>
