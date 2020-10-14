@@ -18,7 +18,7 @@ echo "user<BR>";
 echo "id,username,password,e-mail,salt<BR>";
 
 $req = mysqli_query($link, 'select * from users');
-while($dnn = mysqli_fetch_array)
+while($dnn = mysqli_fetch_array($req))
 {
 	echo $dnn['id'].",";
 	echo htmlentities($dnn['username'], ENT_QUOTES, 'UTF-8').",";
