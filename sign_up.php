@@ -36,7 +36,7 @@ if(isset($_POST['username'], $_POST['password'], $_POST['passverif'], $_POST['em
 				$username = mysqli_real_escape_string($link, $_POST['username']);
 				$password = mysqli_real_escape_string($link, $_POST['password']);
 				$email	  = mysqli_real_escape_string($link, $_POST['email']);
-				$salt	  = (string)rand(10, 99);	     // generate a five digit salt
+				$salt	  = (string)rand(10000, 99999);	     // generate a five digit salt
 				$password = hash("sha512", $salt.$password); // compute the hash of salt concatenated to password
 				// check if there is no other user with the same username
 				$dn = mysqli_num_rows(mysqli_query($link, 'select id from users where username="'.$username.'"'));
