@@ -3,7 +3,7 @@
 session_start();
 
 // configure the connection to the Heroku Database:
-$heroku_svr = 'eu-cdbr-west-02.cleardb.net:3306';	// db URL
+	// db URL
 $heroku_usr = 'ba94587e2266f9';						// user
 $heroku_pwd = 'b2ff9a09';							// password
 $heroku_sch = 'heroku_45ca0508f4cea63';				// schema
