@@ -6,7 +6,7 @@ session_start();
 $heroku_svr = 'eu-cdbr-west-02.cleardb.net:3306';	// db URL
 $heroku_usr = 'ba94587e2266f9';						// user
 $heroku_pwd = 'b2ff9a09';							// password
-				// schema
+$heroku_sch = 'heroku_45ca0508f4cea63';				// schema
 $link	    = new mysqli($heroku_svr, $heroku_usr, $heroku_pwd, $heroku_sch);	// connect to the db
 
 if (!$link) {
@@ -32,7 +32,7 @@ function checkPassword($pwd, &$errors) {
 // getKey: retrieve password for encrypted messages in database
 // $user1 and $user2: the users that the message belongs to
 function getKey($user1, $user2) {
-	global $link;
+	
 
 	//Message DataBase. Access data cryptography hardcoded.
 	$cipher = "aes-256-cbc";
