@@ -18,13 +18,13 @@ echo "user<BR>";
 echo "id,username,password,e-mail,salt<BR>";
 
 $req = mysqli_query($link, 'select * from users');
-while($dnn = mysqli_fetch_array($req))
+while($dnnn = mysqli_fetch_array($req))
 {
 	echo $dnn['id'].",";
-	echo htmlentities($dnn['username'], ENT_QUOTES, 'UTF-8').",";
-	echo htmlentities($dnn['password'], ENT_QUOTES, 'UTF-8').",";
-	echo htmlentities($dnn['email'], ENT_QUOTES, 'UTF-8').",";
-	echo htmlentities($dnn['salt'], ENT_QUOTES, 'UTF-8')."<BR>";
+	echo htmlentities($dnnn['username'], ENT_QUOTES, 'UTF-8').",";
+	echo htmlentities($dnnn['password'], ENT_QUOTES, 'UTF-8').",";
+	echo htmlentities($dnnn['email'], ENT_QUOTES, 'UTF-8').",";
+	echo htmlentities($dnnn['salt'], ENT_QUOTES, 'UTF-8')."<BR>";
 }
 
 //Users
@@ -33,15 +33,15 @@ echo "<BR>pm<BR>";
 echo "id,title,sender,recipient,message,timestamp,tag<BR>";
 $req = mysqli_query($link, 'select * from pm');
 
-while($dnn = mysqli_fetch_array($req))
+while($dnnn = mysqli_fetch_array($req))
 {
-	echo $dnn['id'].",";
-	echo htmlentities($dnn['title'], ENT_QUOTES, 'UTF-8').",";
-	echo htmlentities($dnn['sender'], ENT_QUOTES, 'UTF-8').",";
-	echo htmlentities($dnn['recipient'], ENT_QUOTES, 'UTF-8').",";
-	echo htmlentities($dnn['message'], ENT_QUOTES, 'UTF-8').",";
-	echo htmlentities(date("Y-m-d H:i:s", $dnn['timestamp']), ENT_QUOTES, 'UTF-8').",";
-	echo htmlentities($dnn['tag'], ENT_QUOTES, 'UTF-8')."<BR>";
+	echo $dnnn['id'].",";
+	echo htmlentities($dnnn['title'], ENT_QUOTES, 'UTF-8').",";
+	echo htmlentities($dnnn['sender'], ENT_QUOTES, 'UTF-8').",";
+	echo htmlentities($dnnn['recipient'], ENT_QUOTES, 'UTF-8').",";
+	echo htmlentities($dnnn['message'], ENT_QUOTES, 'UTF-8').",";
+	echo htmlentities(date("Y-m-d H:i:s", $dnnn['timestamp']), ENT_QUOTES, 'UTF-8').",";
+	echo htmlentities($dnnn['tag'], ENT_QUOTES, 'UTF-8')."<BR>";
 }
 
 //Encryption keys for messages
@@ -50,11 +50,11 @@ echo "<BR>messagekeys<BR>";
 echo "user1,user2,mskey<BR>";
 $req = mysqli_query($link, 'select * from messagekeys');
 
-while($dnn = mysqli_fetch_array($req))
+while($dnnn = mysqli_fetch_array($req))
 {
-	echo htmlentities($dnn['user1'], ENT_QUOTES, 'UTF-8').",";
-	echo htmlentities($dnn['user2'], ENT_QUOTES, 'UTF-8').",";
-	echo htmlentities($dnn['mskey'], ENT_QUOTES, 'UTF-8')."<BR>";
+	echo htmlentities($dnnn['user1'], ENT_QUOTES, 'UTF-8').",";
+	echo htmlentities($dnnn['user2'], ENT_QUOTES, 'UTF-8').",";
+	echo htmlentities($dnnn['mskey'], ENT_QUOTES, 'UTF-8')."<BR>";
 }
 ?>
 	</body>
