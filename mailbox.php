@@ -12,7 +12,7 @@ include('config.php');
         <div class="content">
 <?php
 // check if the user is logged in
-if(isset($_SESSION['username']))
+if(isset($_SESSION['email']))
 {
 // list the messages in a table
 // fetch the sent and received messages
