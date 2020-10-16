@@ -18,12 +18,12 @@ if (isset($_POST['email'], $_POST['password'])) {
 		{
 			$ousername = stripslashes($_POST['email']);
 			
-			$username  = mysqli_real_escape_string($link, stripslashes($_POST['email']));
+			$email  = mysqli_real_escape_string($link, stripslashes($_POST['email']));
 			$password  = stripslashes($_POST['password']);
 		}
 		else
 		{
-			$username = mysqli_real_escape_string($link, $_POST['email']);
+			$email = mysqli_real_escape_string($link, $_POST['email']);
 			$password = $_POST['password'];
 		}
 		// fetch the password of the user
