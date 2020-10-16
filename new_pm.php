@@ -13,7 +13,7 @@ include('config.php');
 
 <?php
 //We check if the user is logged in
-if (isset($_SESSION['username'])) {
+if (isset($_SESSION['email'])) {
 	$form     = true;
 	$otitle   = '';
 	$orecip   = '';
