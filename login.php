@@ -27,7 +27,7 @@ if (isset($_POST['email'], $_POST['password'])) {
 			$password = $_POST['password'];
 		}
 		// fetch the password of the user
-		$req = mysqli_query($link, 'select password,id,salt from users where email="'.$email.'"');
+		$req = mysqli_query($link, 'select password,id,salt fromemail where email="'.$email.'"');
 		$dn  = mysqli_fetch_array($req);
 		$password = hash("sha512", $dn['salt'].$password); // salt the password and hash it
 		
@@ -41,7 +41,7 @@ if (isset($_POST['email'], $_POST['password'])) {
 		}
 		else {
 			// Otherwise, the credentials are incorrect
-			$message = 'Incorrect username or password!';
+			$message = 'Incorrect email or password!';
 		}
 	}
 }
