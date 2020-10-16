@@ -9,7 +9,7 @@ if (isset($_SESSION['email'])) {
 }
 
 if (isset($_POST['email'], $_POST['password'])) {
-    $ousername = '';
+    $email= '';
 	// check if the form has been sent
 	if(isset($_POST['email'], $_POST['password']))
 	{
@@ -30,7 +30,7 @@ if (isset($_POST['email'], $_POST['password'])) {
 		$req = mysqli_query($link, 'select password,id,salt from users where username="'.$email.'"');
 		$dn  = mysqli_fetch_array($req);
 		$password = hash("sha512", $dn['salt'].$password); // salt the password and hash it
-		$email = hash("sha512", $dn['salt'].$email);
+		
 		// compare the salted password hash with the real one, and check if the user exists
 		if ($dn['password'] == $password and mysqli_num_rows($req)>0) {
 			// save the user name in the session username and the user Id in the session userid
@@ -58,7 +58,7 @@ if (isset($_POST['email'], $_POST['password'])) {
 		<div class="content">
 			<form action="login.php" method="post">
 				<div class="center">
-					<label for="username">Username</label><input type="text" name="username" id="username" value="<?php echo htmlentities($ousername, ENT_QUOTES, 'UTF-8'); ?>" /><br />
+					<label for="username">email</label><input type="text" name="email" id="email" value="<?php echo htmlentities($email, ENT_QUOTES, 'UTF-8'); ?>" /><br />
 					<label for="password">Password</label><input type="password" name="password" id="password" /><br />
 					<input type="submit" value="Log in" />
 				</div>
