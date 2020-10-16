@@ -17,7 +17,7 @@ include('config.php');
 Hi
 <membername>
 <?php
-if(isset($_SESSION['email'])) {
+if(isset($_SESSION['username'])) {
 	echo ' '.htmlentities($_SESSION['email'], ENT_QUOTES, 'UTF-8');}
 ?>
 </membername>!
@@ -26,7 +26,7 @@ if(isset($_SESSION['email'])) {
 welcome to our Website <br /><br />
 <?php
 //If the user is logged in, we display links to see the list of users, his/her pms and a link to log out
-if (isset($_SESSION['email'])) {
+if (isset($_SESSION['username'])) {
 	echo 'Please see here for a <a href="users.php">list of all users</a> you can send a message to.<br /><br />';
 
     echo '<a href="new_pm.php" class="link_new_pm">Write new message</a><br />';
