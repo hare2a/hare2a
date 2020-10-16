@@ -17,7 +17,7 @@ include('config.php');
 Hi
 <membername>
 <?php
-if(isset($_SESSION['username'])) {
+if(isset($_SESSION['email'])) {
 	echo ' '.htmlentities($_SESSION['email'], ENT_QUOTES, 'UTF-8');}
 ?>
 </membername>!
