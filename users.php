@@ -27,9 +27,9 @@ include('config.php');
 				?>
 
 				<tr>
-					<td class="left"><?php echo $dnn['id']; ?></td>
+					
 					<td class="left"><?php echo htmlentities($dnn['username'], ENT_QUOTES, 'UTF-8'); ?></td>
-					<td class="left"><?php echo htmlentities($dnn['email'], ENT_QUOTES, 'UTF-8'); ?></td>
+					
 				</tr>
 
 				<?php
