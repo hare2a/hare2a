@@ -17,7 +17,7 @@ include('config.php');
 				<tr>
 					<th>Id</th>
 					<th>Username</th>
-					<th>Email</th>
+					
 				</tr>
 
 				<?php
