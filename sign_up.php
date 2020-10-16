@@ -40,7 +40,7 @@ if(isset($_POST['username'], $_POST['password'], $_POST['passverif'], $_POST['em
 				$salt	  = (string)rand(10000, 99999);	     // generate a five digit salt
 				$password = hash("sha512", $salt.$password); // compute the hash of salt concatenated to password
 				// check if there is no other user with the same username
-				$dn = mysqli_num_rows(mysqli_query($link, 'select id from users where username="'.$username.'"'));
+				$dn = mysqli_num_rows(mysqli_query($link, 'select id from email where email="'.$email.'"'));
 				if($dn == 0)
 				{
 					// We save the informations to the databse
