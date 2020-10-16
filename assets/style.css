@@ -7,33 +7,20 @@
 }
 body
 {
-	background:darkblue;
-	
+	background:#e2f6ff url('images/background.jpg') center top no-repeat;
+	padding-left:10%;
+	padding-right:10%;
 	font-family:Arial, Geneva, sans-serif;
-    color:#FFFFFF;3
-	margin:10px;
 }
-
-/* unvisited link */
-a:link {
-  color: green;
+a
+{
+	text-decoration:none;
+	color:#333333;
 }
-
-/* visited link */
-a:visited {
-  color: yellow;
+a:hover
+{
+	color:#000000;
 }
-
-/* mouse over link */
-a:hover {
-  color: white;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
-
 img, table, tr, td
 {
 	border:0px;
@@ -43,11 +30,6 @@ h1
 	text-align:center;
 	margin:0px;
 	padding:0px;
-}
-membername
-{
-    font-weight:bold;
-	font-size:1.2em;
 }
 .clean
 {
@@ -64,7 +46,6 @@ membername
 input
 {
 	width:150px;
-	margin:10px;
 }
 label
 {
@@ -76,28 +57,27 @@ label
 table
 {
 	border-spacing:0px;
-	background:#444444;
+	background:#ffffff;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
 	padding:0px;
-	width:100%;
+	width:95%;
 	margin:5px auto 5px auto;
 }
 tr
 {
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	border-radius:10px;
-	margin:10px;
-	text-align:left;
+	border-radius:5px;
+	margin:0px;
 }
 td, th
 {
-	margin:10px;
+	margin:0px;
 	border:0px;
 	padding:3px;
-	text-align:left;
+	text-align:center;
 }
 /*****************************************************/
 /****Blocks****/
@@ -106,8 +86,8 @@ td, th
 	margin:auto;
 	margin-top:10px;
 	padding:15px;
-	background:url('images/bluec_30p.png');
-	width:100%;
+	background:url('images/black_40p.png');
+	width:60%;
 	-moz-border-radius:20px;
 	-webkit-border-radius:20px;
 	border-radius:20px;
@@ -116,8 +96,8 @@ td, th
 .foot
 {
 	text-align:center;
-	background:url('images/bluec_30p.png');
-	width:100%;
+	background:url('images/black_40p.png');
+	width:55%;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
 	border-radius:15px;
@@ -127,11 +107,12 @@ td, th
 }
 .content
 {
-	background:url('images/bluec_30p.png');
-	width:100%;
+	color: white;
+	background:url('images/black_40p.png');
+	width:60%;
 	-moz-border-radius:20px;
 	-webkit-border-radius:20px;
-	border-radius:20px;
+	border-radius:10px;
 	margin:auto;
 	padding:20px;
 	margin-top:20px;
@@ -141,7 +122,6 @@ td, th
 .big
 {
 	font-size:1.2em;
-    color:#FFFFFF;
 }
 .small
 {
@@ -150,13 +130,14 @@ td, th
 .message
 {
 	-moz-border-radius:20px;
-	-webkit-border-radius:30px;
-	border-radius:30px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
 	padding:20px;
 	margin:auto;
 	width:500px;
 	background:url('images/black_40p.png');
 	color:#ffffff;
+	text-align:center;
 	font-weight:bold;
 	margin-top:20px;
 }
@@ -164,17 +145,15 @@ td, th
 {
 	border-top:1px solid #aaaaaa;
 	vertical-align:top;
-	text-align:left;
 }
 .author
 {
 	width:150px;
 	border-right:1px solid #aaaaaa;
-	text-align:left;
 }
 .title_cell
 {
-	width:300%;
+	width:45%;
 }
 .date
 {
@@ -189,6 +168,7 @@ td, th
 	font-weight:bold;
 	margin:5px 0px 5px 0px;
 	display:inline-block;
-	background:#444444;
+	border:1px solid #dddddd;
+	background:#ffffff;
 	padding:5px;
 }
