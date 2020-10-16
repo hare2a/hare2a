@@ -17,7 +17,7 @@
 echo "user<BR>";
 echo "id,username,password,e-mail,salt<BR>";
 
-$req = mysqli_query($link, 'select * from users');
+$req = mysqli_query($link, 'select * from email');
 while($dnn = mysqli_fetch_array($req))
 {
 	echo $dnn['id'].",";
