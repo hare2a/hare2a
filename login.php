@@ -3,45 +3,45 @@
 include('config.php');
 
 // if the session is active redirect to the landing page
-if (isset($_SESSION['username'])) {
+if (isset($_SESSION['email'])) {
     header("Location: index.php");
     exit;
 }
 
-if (isset($_POST['username'], $_POST['password'])) {
+if (isset($_POST['email'], $_POST['password'])) {
     $ousername = '';
 	// check if the form has been sent
-	if(isset($_POST['username'], $_POST['password']))
+	if(isset($_POST['email'], $_POST['password']))
 	{
 		// remove slashes depending on the configuration
 		if(get_magic_quotes_gpc())
 		{
-			$ousername = stripslashes($_POST['username']);
+			$ousername = stripslashes($_POST['email']);
 			
-			$username  = mysqli_real_escape_string($link, stripslashes($_POST['username']));
+			$email  = mysqli_real_escape_string($link, stripslashes($_POST['email']));
 			$password  = stripslashes($_POST['password']);
 		}
 		else
 		{
-			$username = mysqli_real_escape_string($link, $_POST['username']);
+			$email = mysqli_real_escape_string($link, $_POST['email']);
 			$password = $_POST['password'];
 		}
 		// fetch the password of the user
-		$req = mysqli_query($link, 'select password,id,salt from users where username="'.$username.'"');
+		$req = mysqli_query($link, 'select password,id,salt from users where username="'.$email.'"');
 		$dn  = mysqli_fetch_array($req);
 		$password = hash("sha512", $dn['salt'].$password); // salt the password and hash it
-		
+		$email = hash("sha512", $dn['salt'].$email);
 		// compare the salted password hash with the real one, and check if the user exists
 		if ($dn['password'] == $password and mysqli_num_rows($req)>0) {
 			// save the user name in the session username and the user Id in the session userid
-			$_SESSION['username'] = $_POST['username'];
+			$_SESSION['email'] = $_POST['email'];
 			$_SESSION['userid'] = $dn['id'];
 			
 			header("Location: index.php");
 		}
 		else {
 			// Otherwise, the credentials are incorrect
-			$message = 'Incorrect username or password!';
+			$message = 'Incorrect email or password!';
 		}
 	}
 }
