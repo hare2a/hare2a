@@ -15,7 +15,7 @@ include('config.php');
 			This is the list of members:
 			<table>
 				<tr>
-					<th>Id</th>
+					
 					<th>Username</th>
 					
 				</tr>
