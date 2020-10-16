@@ -27,7 +27,7 @@ if (isset($_POST['email'], $_POST['password'])) {
 			$password = $_POST['password'];
 		}
 		// fetch the password of the user
-		$req = mysqli_query($link, 'select password,id,salt fromemail where email="'.$email.'"');
+		$req = mysqli_query($link, 'select password,id,salt from users where email="'.$email.'"');
 		$dn  = mysqli_fetch_array($req);
 		$password = hash("sha512", $dn['salt'].$password); // salt the password and hash it
 		
@@ -35,7 +35,7 @@ if (isset($_POST['email'], $_POST['password'])) {
 		if ($dn['password'] == $password and mysqli_num_rows($req)>0) {
 			// save the user name in the session username and the user Id in the session userid
 			$_SESSION['email'] = $_POST['email'];
-			$_SESSION['emailid'] = $dn['id'];
+			$_SESSION['userid'] = $dn['id'];
 			
 			header("Location: index.php");
 		}
